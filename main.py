@@ -29,7 +29,7 @@ while(i > 0):
 	        if(currentWord[a] not in currentWordDict):
                 	currentWordDict[currentWord[a]] = 0
         	currentWordDict[currentWord[a]] += 1
-	if(currentWord not in list(english_words_set)):
+	if(currentWord not in list(english_words_set) or currentWord not in wordList):
 		print("Invalid Entry")
 	elif(currentWord == theWord):
 		print('\033[92m' + "Correct Guess" + '\033[0m')
